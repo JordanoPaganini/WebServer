@@ -1,0 +1,45 @@
+Comandos do GIT
+
+- Iniciar um repositório git:
+    
+    git init
+
+- Selecionar a branch:
+
+    git branch -M <Nome da branch> # Padrão do github "main"
+
+- Conectar ao repositório no github:
+
+    git remote add origin <URL do repositório>
+
+- Adicionar arquivos para commit:
+
+    git add <Nome do arquivo> # Utilizar "." para adicionar todos
+
+- Executar commit no repositório local do git:
+
+    git commit -m "<Nome do commit>"
+
+- Enviar commit para o repositório no github:
+
+    git push -u origin main # Authenticar com o github se solicitado
+
+- Ver o histórico de commits no repositório:
+
+    git log
+
+- Clonar um repositório do github:
+
+    git clone <URL do repositório>
+
+- Verificar status de um repositório:
+
+    git status
+
+# Apagar o ultimo commit:
+
+    git reset HEAD~1 # Apaga o ultimo commit do repositório
+
+# Reverter o ultimo commit:
+
+    git revert HEAD~1 # Cria uma nova copia do penultimo commit no repositório, "sobreescrendo" o ultimo realizado
